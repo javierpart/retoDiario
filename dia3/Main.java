@@ -14,7 +14,7 @@ public class Main {
         return nombreCompleto.split(" ");
     }
 
-    public static boolean esNombreComun ( String nombre){
+    public static boolean esNombre ( String nombre){
         String[] nombresComunes = {"Juan", "Maria", "Alberto", "Raul", "Lorena", "Nieves", "Javier", "Alfonso", "Luis", "Lucía", "José"};
         for (String nombresComun : nombresComunes) {
             if (nombresComun == nombre)
@@ -32,7 +32,7 @@ public class Main {
                         ", Apellido2 = " + nombreSeparado[3]);
                 break;
             case 3:
-                if (esNombreComun(nombreSeparado[1])){
+                if (esNombre(nombreSeparado[1])){
                     System.out.println("Nombre1 = " + nombreSeparado[0] +
                             ", Nombre2 = " + nombreSeparado[1] +
                             ", Apellido1 = " + nombreSeparado[2]);}
@@ -42,7 +42,7 @@ public class Main {
                             ", Apellido2 = " + nombreSeparado[2]);}
                 break;
             case 2:
-                if (esNombreComun(nombreSeparado[1])){
+                if (esNombre(nombreSeparado[1])){
                     System.out.println("Nombre1 = " + nombreSeparado[0] +
                             ", Nombre2 = " + nombreSeparado[1]);}
                 else{
