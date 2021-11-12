@@ -16,7 +16,7 @@ public class Util {
     }
 
     public static Integer isInteger(char c){
-        // if char is a int returns int if not returns -1
+        // if char is a int returns int if not returns throws error
         try{
             return Integer.parseInt(String.valueOf(c));
         }catch (Exception e){
