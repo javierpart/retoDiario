@@ -9,13 +9,13 @@ public class Util {
         Integer number;
 
         for (char c : elements){
-            number = isInteger(c);
+            number = getInteger(c);
             result.add(number);
         }
         return result;
     }
 
-    public static Integer isInteger(char c){
+    public static Integer getInteger(char c){
         // if char is a int returns int if not returns throws error
         try{
             return Integer.parseInt(String.valueOf(c));
